@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>GrainRich</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #fff8f0;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #ff6347;
+      color: white;
+      padding: 30px 40px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background: #ffd9cc;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 15px 0;
+      box-shadow: inset 0 -1px 0 #ffa07a;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #ff4500;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #d63400;
+    }
+
+    section {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #ff4500;
+    }
+
+    section p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      position: relative;
+      max-width: 800px;
+      margin: 40px auto;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .mySlides img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 10px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 24px;
+      transition: 0.3s;
+      user-select: none;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 50%;
+    }
+
+    .next {
+      right: 10px;
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    /* Dots */
+    .dot-container {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .dot {
+      cursor: pointer;
+      height: 12px;
+      width: 12px;
+      margin: 0 4px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+
+    .active, .dot:hover {
+      background-color: #ff4500;
+    }
+
+    footer {
+      background: #ff6347;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+    }
+
+    .contact-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #ff4500;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: transform 0.3s;
+      z-index: 1000;
+    }
+
+    .contact-float:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Grain Rich</h1>
+    <p>Your daily dose of deliciousness</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to Felad Foods</h2>
+    <p>
+      Felad Foods Limited is dedicated to producing high-quality, nutritious and unique food products that enhance the well-being of our communities. Through responsible sourcing of raw materials and innovative processing techniques, we aim to deliver Tom brown, Date powder, and Maize flour that not only nourish but also promote sustainable agricultural practices. <br><br>
+
+      <strong>COMPANY GOAL</strong><br>
+      Felad Foods Limited aims at satisfying the growing demand for high quality, nutritious and convenient food options in the market and ultimately providing consumers with access to a diverse range of food choices that are unique, delicious and nutritious.
+    </p>
+  </section>
+
+  <section id="about" style="background: #fff0e6;">
+    <h2>About Us</h2>
+    <p>
+      The company value position lies in offering cheap, high-quality, nutritious, and unique Organic food products that meet the demand of health-conscious individuals. Our commitment to excellence, health, and sustainability drives every aspect of our operations, ensuring that our products contribute positively to the lives of those we serve.
+    </p>
+  </section>
+
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <p>
+      The date fruit is sweet and packed with energy, vitamins, and fiber. It’s a natural snack loved in many cultures. Tom Brown, on the other hand, is a nutritious cereal made from blended grains like maize, millet, and soybeans. It’s often served hot and is especially good for growing children and healthy living.
+    </p>
+
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSTzk8O80ME9YqUqnvYqfdQwCVnvbZhKsSEh-lkWOluE8IjWovddQicONb-bjtnZ0gZYFVwdlAxsKcy7caW4f5wmjk5mixEyOyNWrTrh-oNF9NQE0PMzooMRlq4113YP-KkRLDSFspppwPuOrBzUSY1981Z0sG9LzxJMWiToNdk13V8CSSc5NhmDfAk8eY/s320/image3.jpg">
+      </div>
+      <div class="mySlides fade">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYGHXC2EPqOQ8csA2uWKuDuTYLYyY44GDkZ1XZxLG7TM9MhvFIvCWXSez5ykVOvpFjBUPOJ5OUdEHSO9MyB9SR-9P-Jz-tAwHsIkaWpYxjegQ5oIOAL-GT_6s4rSg92AQEQBfUyOEtimFJeZOTQK31ddjojEr-Q1KoBdKc73A83LX7wE5RzSdeIHm-SXbU/s320/image.jpg">
+      </div>
+      <div class="mySlides fade">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdd4Idx_Doqy-F1axbP2NAHx_1liwa5-N_qsUJU4AjYWyc5PE8zqlAHSsLDGHiUXVH3m772vGEAYXO8-iXZzy-Fm_vZWyQvjvxhwA2MgdS3_dSRl8mUmN1QP6Sj_AxiSQ0oH2kFr6tA5AH9p5LG67PXp3wTRsHF6VUr9usROz5Tqfdp450GG41VNz3cp82/s320/image1.jpg">
+      </div>
+      <div class="mySlides fade">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEit_wmGkJ8w12eijCPsfUriCkSJmbIwA2T2nBPTAe-3Mb1rlR8Bw-miRMXPEj9wfdG-dsWPbgZr6FVLL8_wOB4FJwoK8yAu9Adq1flpzrhqqt62ZS5uYydrOcdFmh9CSL33nWaDVYkpyv3pyU90uuURxRR6qh3CQiwaTr5fq6Ecjvli4JPYeKqg3tt1UiPQ/s320/image2.jpg">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="background: #fff0e6;">
+    <h2>Contact Us</h2>
+    <p>
+      Phone: +234 916 178 7977, +234 907 543 7890<br>
+      Email: info@feladfoods.com<br>
+      Location: 123 Tasty Lane, Lagos, Nigeria
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Felad Foods. All rights reserved.</p>
+  </footer>
+
+  <div class="contact-float" onclick="window.location.href='#contact'">
+    ✉
+  </div>
+
+  <!-- Slideshow Script -->
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      const slides = document.getElementsByClassName("mySlides");
+      const dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+
+    // Optional Auto Slide
+    setInterval(() => {
+      plusSlides(1);
+    }, 5000); // Change every 5 seconds
+  </script>
+
+</body>
+</html>
